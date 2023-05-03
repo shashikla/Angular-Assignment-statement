@@ -1,0 +1,23 @@
+
+
+<table class="table">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Start Time</th>
+        <th>End Time</th>
+        <th>Total Time Worked</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let employee of employees">
+        <td>{{ employee.EmployeeName }}</td>
+        <td>{{employee.StarTimeUtc}}</td>
+        <td>{{employee.EndTimeUtc}}</td>
+        <td>{{ employee.totalHours }}</td>
+      </tr>
+    </tbody>
+  </table>
+
+  
+  
